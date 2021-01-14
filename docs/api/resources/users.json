@@ -1,0 +1,187 @@
+[
+  {
+    "resourceName": "users",
+    "title": "Create a user",
+    "request": {
+      "httpMethod": "POST",
+      "url": "/api/users"
+    },
+    "requiredTokens": null,
+    "requiredInput": [
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": "No",
+        "constraints": "Must be 2-21 characters long."
+      },
+      {
+        "name": "password",
+        "type": "String",
+        "nullable": "No",
+        "constraints": "Must be 8-85 characters long."
+      },
+      {
+        "name": "email",
+        "type": "String",
+        "nullable": "No",
+        "constraints": "Must be 5-85 characters long."
+      }
+    ],
+    "successCode": 201,
+    "returnsOnSuccess": [
+      {
+        "name": "id",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": "No"
+      },
+      {
+        "name": "email",
+        "type": "String",
+        "nullable": "No"
+      }
+    ],
+    "errors": [
+      {"code": 400, "type": "invalid_input_data"},
+      {"code": 422, "type": "invalid_username"},
+      {"code": 422, "type": "invalid_password"},
+      {"code": 422, "type": "invalid_email"},
+      {"code": 500, "type": "unhandled_exception"},
+      {"code": 500, "type": "database_query_failed"}
+    ]
+  },
+  {
+    "resourceName": "users",
+    "title": "Get user information",
+    "request": {
+      "httpMethod": "GET",
+      "url": "/api/users/{user_id}"
+    },
+    "requiredTokens": [
+      {
+        "name": "access_token",
+        "transferDetails": "Transferred as a Bearer token in the authorization header."
+      }
+    ],
+    "requiredInput": null,
+    "successCode": 200,
+    "returnsOnSuccess": [
+      {
+        "name": "id",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": "No"
+      },
+      {
+        "name": "email",
+        "type": "String",
+        "nullable": "No"
+      }
+    ],
+    "errors": [
+      {"code": 401, "type": "bearer_token_not_provided"},
+      {"code": 401, "type": "invalid_access_token"},
+      {"code": 403, "type": "permission_denied"},
+      {"code": 404, "type": "user_not_found"},
+      {"code": 500, "type": "unhandled_exception"},
+      {"code": 500, "type": "database_query_failed"}
+    ]
+  },
+  {
+    "resourceName": "users",
+    "title": "Modify user information",
+    "request": {
+      "httpMethod": "PATCH",
+      "url": "/api/users/{user_id}"
+    },
+    "requiredTokens": [
+      {
+        "name": "access_token",
+        "transferDetails": "Transferred as a Bearer token in the authorization header."
+      }
+    ],
+    "requiredInput": [
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": "No",
+        "constraints": "Must be 2-21 characters long."
+      },
+      {
+        "name": "password",
+        "type": "String",
+        "nullable": "No",
+        "constraints": "Must be 8-85 characters long."
+      },
+      {
+        "name": "email",
+        "type": "String",
+        "nullable": "No",
+        "constraints": "Must be 5-85 characters long."
+      }
+    ],
+    "successCode": 204,
+    "returnsOnSuccess": [
+      {
+        "name": "id",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": "No"
+      },
+      {
+        "name": "email",
+        "type": "String",
+        "nullable": "No"
+      }
+    ],
+    "errors": [
+      {"code": 400, "type": "invalid_input_data"},
+      {"code": 401, "type": "bearer_token_not_provided"},
+      {"code": 401, "type": "invalid_access_token"},
+      {"code": 403, "type": "permission_denied"},
+      {"code": 404, "type": "user_not_found"},
+      {"code": 422, "type": "invalid_username"},
+      {"code": 422, "type": "invalid_password"},
+      {"code": 422, "type": "invalid_email"},
+      {"code": 500, "type": "unhandled_exception"},
+      {"code": 500, "type": "database_query_failed"}
+    ]
+  },
+  {
+    "resourceName": "users",
+    "title": "Delete user",
+    "request": {
+      "httpMethod": "DELETE",
+      "url": "/api/users/{user_id}"
+    },
+    "requiredTokens": [
+      {
+        "name": "access_token",
+        "transferDetails": "Transferred as a Bearer token in the authorization header."
+      }
+    ],
+    "requiredInput": null,
+    "successCode": 204,
+    "returnsOnSuccess": null,
+    "errors": [
+      {"code": 401, "type": "bearer_token_not_provided"},
+      {"code": 401, "type": "invalid_access_token"},
+      {"code": 403, "type": "permission_denied"},
+      {"code": 404, "type": "user_not_found"},
+      {"code": 500, "type": "unhandled_exception"},
+      {"code": 500, "type": "database_query_failed"}
+    ]
+  }
+]

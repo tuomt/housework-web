@@ -1,0 +1,7 @@
+.docs {
+    text-align: left;
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    max-width: 1500px;
+}

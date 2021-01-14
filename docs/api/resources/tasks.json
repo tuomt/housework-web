@@ -1,0 +1,198 @@
+[
+  {
+    "resourceName": "tasks",
+    "title": "Create a task for a group",
+    "request": {
+      "httpMethod": "POST",
+      "url": "/api/groups/{group_id}/tasks"
+    },
+    "requiredTokens": [
+      {
+        "name": "access_token",
+        "transferDetails": "Transferred as a Bearer token in the authorization header."
+      }
+    ],
+    "requiredInput": [
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": "No",
+        "constraints": "Must be 3-42 characters long."
+      },
+      {
+        "name": "start_date",
+        "type": "String",
+        "nullable": "No",
+        "constraints": null
+      },
+      {
+        "name": "end_date",
+        "type": "string",
+        "nullable": "Yes",
+        "constraints": null
+      },
+      {
+        "name": "recurring",
+        "type": "Unsigned integer",
+        "nullable": "Yes",
+        "constraints": null
+      },
+      {
+        "name": "saved",
+        "type": "Unsigned integer",
+        "nullable": "No",
+        "constraints": null
+      },
+      {
+        "name": "progress",
+        "type": "Unsigned integer",
+        "nullable": "No",
+        "constraints": null
+      },
+      {
+        "name": "description",
+        "type": "String",
+        "nullable": "Yes",
+        "constraints": null
+      }
+    ],
+    "successCode": 201,
+    "returnsOnSuccess": [
+      {
+        "name": "id",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "creator_id",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "group_id",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": "No"
+      },
+      {
+        "name": "start_date",
+        "type": "String",
+        "nullable": "No"
+      },
+      {
+        "name": "end_date",
+        "type": "string",
+        "nullable": "Yes"
+      },
+      {
+        "name": "recurring",
+        "type": "Unsigned integer",
+        "nullable": "Yes"
+      },
+      {
+        "name": "saved",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "progress",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "description",
+        "type": "String",
+        "nullable": "Yes"
+      }
+    ],
+    "errors": [
+      {"code": 400, "type": "invalid_input_data"},
+      {"code": 401, "type": "bearer_token_not_provided"},
+      {"code": 401, "type": "invalid_access_token"},
+      {"code": 403, "type": "privileges_required"},
+      {"code": 403, "type": "permission_denied"},
+      {"code": 500, "type": "unhandled_exception"},
+      {"code": 500, "type": "database_query_failed"}
+    ]
+  },
+  {
+    "resourceName": "tasks",
+    "title": "Get all group's tasks",
+    "request": {
+      "httpMethod": "GET",
+      "url": "/api/groups/{group_id}/tasks"
+    },
+    "requiredTokens": [
+      {
+        "name": "access_token",
+        "transferDetails": "Transferred as a Bearer token in the authorization header."
+      }
+    ],
+    "successCode": 200,
+    "returnFormat": "An array of JSON-objects:",
+    "returnsOnSuccess": [
+      {
+        "name": "id",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "creator_id",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "group_id",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": "No"
+      },
+      {
+        "name": "start_date",
+        "type": "String",
+        "nullable": "No"
+      },
+      {
+        "name": "end_date",
+        "type": "string",
+        "nullable": "Yes"
+      },
+      {
+        "name": "recurring",
+        "type": "Unsigned integer",
+        "nullable": "Yes"
+      },
+      {
+        "name": "saved",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "progress",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "description",
+        "type": "String",
+        "nullable": "Yes"
+      }
+    ],
+    "errors": [
+      {"code": 401, "type": "bearer_token_not_provided"},
+      {"code": 401, "type": "invalid_access_token"},
+      {"code": 403, "type": "permission_denied"},
+      {"code": 404, "type": "group_has_no_tasks"},
+      {"code": 500, "type": "unhandled_exception"},
+      {"code": 500, "type": "database_query_failed"}
+    ]
+  }
+]

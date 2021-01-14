@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Choretracker - App</title>
+  <link rel="stylesheet" href="css/default-style.css">
+  <link rel="stylesheet" href="css/login-modal-style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+</head>
+<body>
+<div class="loginModal" id="loginModal">
+  <div class="loginModalContent">
+    <button id="closeLoginModalBtn">&times;</button>
+    <h2 class="formHeader">Sign in</h2>
+    <br><br>
+    <label for="username" class="formLabel">Username</label>
+    <input id="username" class="formField" type="text">
+    <br>
+    <label for="password" class="formLabel">Password</label>
+    <input id="password" class="formField" type="password">
+    <br>
+    <button id="loginBtn">Login</button>
+  </div>
+</div>
+<header>
+  <a href="index.html" class="headerElement">
+    <img src="img/logo.png" id="logo" alt="Logo"></a>
+  <button id="aboutBtn" class="headerElement headerBtn" onclick="window.location.href='about.html'">About</button>
+  <button class="headerElement headerBtn" onclick="window.location.href='app.html'">The app</button>
+  <button id="apiDocsBtn" class="headerElement headerBtn"
+          onclick="window.location.href='docs/api/index.php'">API</button>
+  <button id="openLoginModalBtn" class="headerElement headerBtn">Sign in</button>
+</header>
+
+<section class="defaultSection">
+  <h1>What is it?</h1>
+  <p>Choretracker is an Android app for keeping track of household chores.
+  It is currently in development.</p>
+</section>
+
+<section class="defaultSection">
+  <h1>Features</h1>
+  <ul>
+    <li>Create tasks and share them with your family</li>
+    <li>Assign tasks for one person or multiple people</li>
+    <li>Set task to recur daily, weekly, monthly or annually</li>
+    <li>Set a timespan in which the task must be completed</li>
+    <li>Save tasks for future use</li>
+  </ul>
+</section>
+
+<section class="defaultSection">
+  <h1>How it works</h1>
+  <p>We have designed a database, in which we store users, groups and tasks.
+     Data can be accessed through a REST API in JSON format.
+     The requests to the API use standard HTTP-methods such as GET and POST.
+     The API will be used on this web site as well when it is finished.
+  </p>
+  <p>Currently our main priority is the mobile application.
+     We are developing it with Android Studio, Java being our main programming language.
+     The REST API is written in PHP and it interacts with MySQL database.
+  </p>
+</section>
+
+<script src="js/login-modal.js"></script>
+</body>
+</html>

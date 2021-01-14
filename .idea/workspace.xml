@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e21490cb-27c3-4817-b3e7-0523988c0be9" name="Default Changelist" comment="Update task docs">
+      <change beforePath="$PROJECT_DIR$/part3/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part3/10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part3/15.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part3/2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part3/3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part3/4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part3/5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part3/6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part3/7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part3/9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_part1/1b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_part1/2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_part1/4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_part1/9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_part2/DatabaseConnection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_part2/add_car.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_part2/print-cars.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_part2/search-cars.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_part2/table-style.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
+  <component name="ProjectId" id="1kK6NXYh4sfbPPTAoZVy4AezD3G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/php_part2" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/php_part2" />
+      <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$/api" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/api" />
+      <recent name="$PROJECT_DIR$/api/docs/resources" />
+      <recent name="$PROJECT_DIR$/api/docs" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.add_car.php">
+    <configuration name="add_car.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/housework-web/php_part2/add_car.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/housework-web/docs/api/index.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="old.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/housework-web/api/docs/old.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="users.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/housework-web/api/docs/users.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="print-cars.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/php_part2/print-cars.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="users.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/docs/api/users.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.add_car.php" />
+        <item itemvalue="PHP Script.print-cars.php" />
+        <item itemvalue="PHP Script.users.php" />
+        <item itemvalue="JavaScript Debug.index.php" />
+        <item itemvalue="JavaScript Debug.old.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e21490cb-27c3-4817-b3e7-0523988c0be9" name="Default Changelist" comment="" />
+      <created>1605436899892</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605436899892</updated>
+      <workItem from="1605436902549" duration="20984000" />
+      <workItem from="1605622766517" duration="40000" />
+      <workItem from="1605986717178" duration="5118000" />
+      <workItem from="1606060661032" duration="16474000" />
+      <workItem from="1606101775566" duration="21000" />
+      <workItem from="1606324175565" duration="41752000" />
+      <workItem from="1606667387653" duration="71000" />
+      <workItem from="1606741207010" duration="666000" />
+      <workItem from="1606998089275" duration="8302000" />
+      <workItem from="1607834309600" duration="698000" />
+      <workItem from="1607937003192" duration="10000" />
+      <workItem from="1607987788527" duration="20000" />
+      <workItem from="1610635991104" duration="1006000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update task docs">
+      <created>1607621242134</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607621242134</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Update task docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update task docs" />
+  </component>
+</project>

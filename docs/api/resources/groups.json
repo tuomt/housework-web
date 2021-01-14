@@ -1,0 +1,176 @@
+[
+  {
+    "resourceName": "groups",
+    "title": "Create a group",
+    "request": {
+      "httpMethod": "POST",
+      "url": "/api/groups"
+    },
+    "requiredTokens": null,
+    "requiredInput": [
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": "No",
+        "constraints": "Must be 3-21 characters long."
+      },
+      {
+        "name": "password",
+        "type": "String",
+        "nullable": "No",
+        "constraints": "Must be 5-85 characters long."
+      }
+    ],
+    "successCode": 201,
+    "returnsOnSuccess": [
+      {
+        "name": "id",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "creator_id",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": "No"
+      }
+    ],
+    "errors": [
+      {"code": 400, "type": "invalid_input_data"},
+      {"code": 401, "type": "bearer_token_not_provided"},
+      {"code": 401, "type": "invalid_access_token"},
+      {"code": 422, "type": "invalid_group_name"},
+      {"code": 422, "type": "invalid_group_password"},
+      {"code": 500, "type": "unhandled_exception"},
+      {"code": 500, "type": "database_query_failed"}
+    ]
+  },
+  {
+    "resourceName": "groups",
+    "title": "Get group information",
+    "request": {
+      "httpMethod": "GET",
+      "url": "/api/groups/{group_id}"
+    },
+    "requiredTokens": [
+      {
+        "name": "access_token",
+        "transferDetails": "Transferred as a Bearer token in the authorization header."
+      }
+    ],
+    "successCode": 200,
+    "returnsOnSuccess": [
+      {
+        "name": "id",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "creator_id",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": "No"
+      }
+    ],
+    "errors": [
+      {"code": 401, "type": "bearer_token_not_provided"},
+      {"code": 401, "type": "invalid_access_token"},
+      {"code": 403, "type": "permission_denied"},
+      {"code": 404, "type": "group_not_found"},
+      {"code": 500, "type": "unhandled_exception"},
+      {"code": 500, "type": "database_query_failed"}
+    ]
+  },
+  {
+    "resourceName": "groups",
+    "title": "Modify group information",
+    "request": {
+      "httpMethod": "PATCH",
+      "url": "/api/groups/{group_id}"
+    },
+    "requiredTokens": [
+      {
+        "name": "access_token",
+        "transferDetails": "Transferred as a Bearer token in the authorization header."
+      }
+    ],
+    "requiredInput": [
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": "No",
+        "constraints": "Must be 2-21 characters long."
+      },
+      {
+        "name": "password",
+        "type": "String",
+        "nullable": "No",
+        "constraints": "Must be 8-85 characters long."
+      }
+    ],
+    "successCode": 204,
+    "returnsOnSuccess": [
+      {
+        "name": "id",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "creator_id",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": "No"
+      }
+    ],
+    "errors": [
+      {"code": 400, "type": "invalid_input_data"},
+      {"code": 401, "type": "bearer_token_not_provided"},
+      {"code": 401, "type": "invalid_access_token"},
+      {"code": 403, "type": "permission_denied"},
+      {"code": 403, "type": "privileges_required"},
+      {"code": 404, "type": "group_not_found"},
+      {"code": 422, "type": "invalid_group_name"},
+      {"code": 422, "type": "invalid_group_password"},
+      {"code": 500, "type": "unhandled_exception"},
+      {"code": 500, "type": "database_query_failed"}
+    ]
+  },
+  {
+    "resourceName": "groups",
+    "title": "Delete group",
+    "request": {
+      "httpMethod": "DELETE",
+      "url": "/api/groups/{group_id}"
+    },
+    "requiredTokens": [
+      {
+        "name": "Access token",
+        "transferDetails": "Transferred as a Bearer token in the authorization header."
+      }
+    ],
+    "requiredInput": null,
+    "successCode": 204,
+    "returnsOnSuccess": null,
+    "errors": [
+      {"code": 401, "type": "bearer_token_not_provided"},
+      {"code": 401, "type": "invalid_access_token"},
+      {"code": 403, "type": "permission_denied"},
+      {"code": 403, "type": "privileges_required"},
+      {"code": 404, "type": "group_not_found"},
+      {"code": 500, "type": "unhandled_exception"},
+      {"code": 500, "type": "database_query_failed"}
+    ]
+  }
+]

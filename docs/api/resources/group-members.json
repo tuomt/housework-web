@@ -1,0 +1,121 @@
+[
+  {
+    "resourceName": "group-members",
+    "title": "Create a group member",
+    "request": {
+      "httpMethod": "POST",
+      "url": "/api/groups/{group_id}/members"
+    },
+    "requiredTokens": [
+      {
+        "name": "access_token",
+        "transferDetails": "Transferred as a Bearer token in the authorization header."
+      },
+      {
+        "name": "group_token",
+        "transferDetails": "Transferred as a key-value pair inside a JSON object."
+      }
+    ],
+    "requiredInput": [
+      {
+        "name": "group_token",
+        "type": "String",
+        "nullable": "No",
+        "constraints": null
+      }
+    ],
+    "successCode": 201,
+    "returnsOnSuccess": [
+      {
+        "name": "group_id",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "user_id",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "master",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      }
+    ],
+    "errors": [
+      {"code": 400, "type": "invalid_input_data"},
+      {"code": 401, "type": "bearer_token_not_provided"},
+      {"code": 401, "type": "invalid_access_token"},
+      {"code": 401, "type": "invalid_group_token"},
+      {"code": 409, "type": "user_is_already_member"},
+      {"code": 500, "type": "unhandled_exception"},
+      {"code": 500, "type": "database_query_failed"}
+    ]
+  },
+  {
+    "resourceName": "group-members",
+    "title": "Get all group members",
+    "request": {
+      "httpMethod": "GET",
+      "url": "/api/groups/{group_id}/members"
+    },
+    "requiredTokens": [
+      {
+        "name": "access_token",
+        "transferDetails": "Transferred as a Bearer token in the authorization header."
+      }
+    ],
+    "successCode": 200,
+    "returnFormat": "An array of JSON-objects:",
+    "returnsOnSuccess": [
+      {
+        "name": "id",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "name",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      },
+      {
+        "name": "master",
+        "type": "Unsigned integer",
+        "nullable": "No"
+      }
+    ],
+    "errors": [
+      {"code": 401, "type": "bearer_token_not_provided"},
+      {"code": 401, "type": "invalid_access_token"},
+      {"code": 403, "type": "permission_denied"},
+      {"code": 404, "type": "group_has_no_members"},
+      {"code": 500, "type": "unhandled_exception"},
+      {"code": 500, "type": "database_query_failed"}
+    ]
+  },
+  {
+    "resourceName": "group-members",
+    "title": "Delete group member",
+    "request": {
+      "httpMethod": "DELETE",
+      "url": "/api/groups/{group_id}/members/{user_id}"
+    },
+    "requiredTokens": [
+      {
+        "name": "access_token",
+        "transferDetails": "Transferred as a Bearer token in the authorization header."
+      }
+    ],
+    "returnsOnSuccess": null,
+    "successCode": 204,
+    "errors": [
+      {"code": 401, "type": "bearer_token_not_provided"},
+      {"code": 401, "type": "invalid_access_token"},
+      {"code": 403, "type": "permission_denied"},
+      {"code": 403, "type": "privileges_required"},
+      {"code": 404, "type": "group_member_not_found"},
+      {"code": 500, "type": "unhandled_exception"},
+      {"code": 500, "type": "database_query_failed"}
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Choretracker - About</title>
+  <link rel="stylesheet" href="css/default-style.css">
+  <link rel="stylesheet" href="css/login-modal-style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+</head>
+<style>
+</style>
+<body>
+<div class="loginModal" id="loginModal">
+  <div class="loginModalContent">
+    <button id="closeLoginModalBtn">&times;</button>
+    <h2 class="formHeader">Sign in</h2>
+    <br><br>
+    <label for="username" class="formLabel">Username</label>
+    <input id="username" class="formField" type="text">
+    <br>
+    <label for="password" class="formLabel">Password</label>
+    <input id="password" class="formField" type="password">
+    <br>
+    <button id="loginBtn">Login</button>
+  </div>
+</div>
+<header>
+  <a href="index.html" class="headerElement">
+    <img src="img/logo.png" id="logo" alt="Logo"></a>
+  <button id="aboutBtn" class="headerElement headerBtn" onclick="window.location.href='about.html'">About</button>
+  <button id="appBtn" class="headerElement headerBtn" onclick="window.location.href='app.html'">The app</button>
+  <button id="apiDocsBtn" class="headerElement headerBtn"
+          onclick="window.location.href='docs/api/index.php'">API</button>
+  <button id="openLoginModalBtn" class="headerElement headerBtn">Sign in</button>
+</header>
+
+<section class="defaultSection">
+  <h1>About</h1>
+  <p>Hi! This is a site I made for web programming class.
+     The idea is to keep developing this site as we go on with the course.
+     Currently there's not much content, but I will add more as time goes one.
+  </p>
+
+  <p>I wanted to combine this course with a software project development class.
+     More information about the project can be found in "The app" -page.
+     Later on I will try to implement sign up and sign in logic on this web site,
+     so that you can browse tasks that you have created in the mobile app.
+  </p>
+</section>
+<script src="js/login-modal.js"></script>
+</body>
+</html>

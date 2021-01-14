@@ -1,0 +1,84 @@
+/* The sidebar menu */
+.sidenav {
+  width: 200px; /* Set the width of the sidebar */
+  position: fixed;
+  background-color: #8cc5fe;
+  background-image: linear-gradient(to top, #8cc5fe, #adbac7);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 10px 0px 10px 0px;
+  margin-top: 20px;
+  border: 3px solid black;
+  /*top: 0;
+  bottom: 0;*/
+  max-height: calc(100vh - 9rem);
+}
+
+/* The navigation menu links */
+.sidenav a {
+  margin: 20px 10px;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+  background-color: #dbdcdc;
+  display: block;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.sidenav a:hover {
+  background-color: #404040;
+  cursor: pointer;
+}
+
+.sidenav a:target {
+  background-color: red;
+}
+
+
+.sidenav .subSection {
+  margin: 10px 10px;
+  font-size: 1.1em;
+  font-weight: normal;
+  text-align: left;
+}
+
+/* Unique color for selected page */
+.sidenav .selectedPage {
+  background-color: #404040;
+  color: white;
+}
+
+.sidenav .subSection a {
+  background-color: white;
+}
+
+.sidenav .subSection a:hover {
+  background-color: #404040;
+  cursor: pointer;
+}
+
+.sidenav h2 {
+  text-align: center;
+  font-size: 2em;
+  margin: 20px 20px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 220px; /* Same as the width of the sidebar */
+  border-radius: 0px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
